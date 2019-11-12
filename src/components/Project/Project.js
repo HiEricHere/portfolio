@@ -3,13 +3,23 @@ import PropTypes from "prop-types";
 
 const Project = props => {
   const { details } = props;
-  const { title, description, concepts, tech } = details;
+  const { title, description, concepts, tech, splash, github, link } = details;
   return (
     <li>
-      <h1>Title: {title}</h1>
-      <p>Description: {description}</p>
-      <p>Concept: {concepts}</p>
-      <p>Tech: {tech}</p>
+      <h1>{title}</h1>
+      {splash.length ? <img src={splash} alt={title} /> : null}
+      {link.length ? (
+        <p>
+          <a href={github}>GitHub</a> | <a href={link}>Link</a>
+        </p>
+      ) : (
+        <p>
+          <a href={github}>GitHub</a>
+        </p>
+      )}
+      <p>{description}</p>
+      <p>{concepts}</p>
+      <p>{tech}</p>
     </li>
   );
 };

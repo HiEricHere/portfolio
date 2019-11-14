@@ -18,7 +18,16 @@ const Project = props => {
         </p>
       )}
       <p>{description}</p>
-      <p>{concepts}</p>
+      <p>Concepts Learned</p>
+      {concepts.map(element => {
+        return (
+          <div>
+            <p>{element.concept}</p>
+            <p>{element.description}</p>
+          </div>
+        );
+      })}
+      <p>Tech Used</p>
       <p>{tech}</p>
     </li>
   );
@@ -28,7 +37,7 @@ Project.propTypes = {
   details: PropTypes.objectOf(PropTypes.string),
   title: PropTypes.string,
   description: PropTypes.string,
-  concepts: PropTypes.string,
+  concepts: PropTypes.arrayOf(PropTypes.object),
   tech: PropTypes.string
 };
 
@@ -36,7 +45,7 @@ Project.defaultProps = {
   details: {},
   title: "",
   description: "",
-  concepts: "",
+  concepts: [],
   tech: ""
 };
 

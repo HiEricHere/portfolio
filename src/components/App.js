@@ -1,20 +1,28 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import NavBar from "./NavBar/NavBar";
-import About from "./About/About";
+import Home from "./Home/Home";
+import Skills from "./Skills/Skills";
 import Portfolio from "./Portfolio/Portfolio";
+import Contact from "./Contact/Contact";
+
+import "./App.css";
 
 const App = () => {
+  console.log(
+    "Hey there, this site was built to practice React and also to give me pressure to work on more projects - basically to keep me busy learning. \n - Eric"
+  );
   return (
     <>
-      <BrowserRouter>
+      <div id="AppContainer">
         <NavBar />
-        <Switch>
-          <Route exact path="/" component={About} />
-          <Route exact path="/portfolio" component={Portfolio} />
-        </Switch>
-      </BrowserRouter>
+        <div id="container-view">
+          <Home />
+          <Skills />
+          <Portfolio />
+          <Contact />
+        </div>
+      </div>
     </>
   );
 };

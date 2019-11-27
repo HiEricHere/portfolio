@@ -1,0 +1,26 @@
+#container-portfolio {
+  width: 100%;
+  margin: auto;
+}
+
+#container-portfolio ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  gap: 2em;
+}
+
+#container-portfolio img {
+  max-height: 250px;
+  max-width: 100%;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.tools-style {
+  background-color: #F7F7F7;
+  padding: 3%;
+}

@@ -1,0 +1,19 @@
+#container-contacts > ul > li {
+  display: inline-block;
+  margin: 2%;
+  height: 75px;
+  width: 75px;
+}
+
+#contacts-list > li > a:hover {
+  background-color: white;
+}
+
+#contacts-list img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#contacts-list img:hover {
+  transform: scale(1.2);
+}

@@ -3,31 +3,54 @@ import PropTypes from "prop-types";
 
 const Project = props => {
   const { details } = props;
-  const { title, description, concepts, tech } = details;
+  const {
+    title,
+    description,
+    tools,
+    splash,
+    github,
+    link,
+    sampleImage
+  } = details;
   return (
     <li>
-      <h1>Title: {title}</h1>
-      <p>Description: {description}</p>
-      <p>Concept: {concepts}</p>
-      <p>Tech: {tech}</p>
+      {splash.length ? <img src={splash} alt={title} /> : <h1>{title}</h1>}
+      {link.length ? (
+        <p>
+          [ <a href={github}>GitHub</a> | <a href={link}>Link</a> ]
+        </p>
+      ) : (
+        <p>
+          [ <a href={github}>GitHub</a> ]
+        </p>
+      )}
+      <p className="align-left">{description}</p>
+      {sampleImage.length ? (
+        <img className="sample-image" src={sampleImage} alt={title} />
+      ) : null}
+      <div className="tools-style align-left">
+        <p>Tools Used</p>
+        <p style={{ margin: 0 }}>{tools}</p>
+      </div>
     </li>
   );
 };
 
 Project.propTypes = {
-  details: PropTypes.objectOf(PropTypes.string),
+  // eslint-disable-next-line react/forbid-prop-types
+  details: PropTypes.object,
   title: PropTypes.string,
   description: PropTypes.string,
-  concepts: PropTypes.string,
-  tech: PropTypes.string
+  tools: PropTypes.string,
+  sampleImage: PropTypes.string
 };
 
 Project.defaultProps = {
   details: {},
   title: "",
   description: "",
-  concepts: "",
-  tech: ""
+  tools: "",
+  sampleImage: ""
 };
 
 export default Project;

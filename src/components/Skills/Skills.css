@@ -1,0 +1,35 @@
+#container-skills {
+  width: 33%;
+  margin: auto;
+}
+
+#skill-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  place-items: center;
+  gap: 20px;
+}
+
+.container-skill {
+  place-self: center;
+}
+
+.container-skill:hover {
+  transform: scale(0.9);
+}
+
+.skill-img {
+  margin-bottom: 10px;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.container-skill > figcaption {
+  transition: opacity 300ms ease-in-out;
+}
+
+.hide-caption {
+  opacity: 0;
+}

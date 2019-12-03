@@ -1,19 +1,40 @@
-#container-contacts > ul > li {
-  display: inline-block;
-  margin: 2%;
-  height: 75px;
-  width: 75px;
-}
-
-#contacts-list > li > a:hover {
-  background-color: white;
-}
-
 #contacts-list img {
   max-height: 100%;
   max-width: 100%;
 }
 
-#contacts-list img:hover {
-  transform: scale(1.2);
+/* mobile */
+@media all and (max-width: 768px){
+
+  #container-contacts > ul > li {
+    display: inline-block;
+    margin: 1%;
+    height: 50px;
+    width: 50px;
+  }
+
+}
+
+/* monitor */
+@media all and (min-width: 769px){
+
+  #container-contacts > ul > li {
+    display: inline-block;
+    margin: 2%;
+    height: 75px;
+    width: 75px;
+  }
+
+  #contacts-list > li > a {
+    border-bottom: none;
+  }
+
+  #contacts-list > li > a:hover {
+    background-color: white;
+  }
+
+  #contacts-list img:hover {
+    transform: scale(1.2);
+  }
+
 }

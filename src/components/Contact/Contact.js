@@ -23,7 +23,7 @@ const Contact = () => {
 
   return (
     <section id="container-contacts">
-      <h1>Contact</h1>
+      <h2>Contact</h2>
       <ul id="contacts-list">
         {contact.map(link => {
           return (

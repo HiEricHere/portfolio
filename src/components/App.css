@@ -1,61 +1,121 @@
 html {
   font-family: "Fira Mono", monospace;
+  color: #6C7680;
   background-color: #F7F7F7;
-  margin: auto;
-  width: 80%;
   text-align: center;
-  font-size: 16px;
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: white;
-  padding: 0 3% 3% 3%;
-}
-
-h1, h2, h3, h4, h5, h6, p, img {
-  margin-bottom: 2em;
-  line-height: 1.25em;
-}
-
-section {
-  padding-top: 4em;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-h3 {
-  font-size: 1.17em;
-}
-
-h5 {
-  font-size: 0.83em;
-}
-
-h6 {
-  font-size: 0.67em;
-}
-
-p {
-  line-height: 1.25em;
+  margin: auto;
+  font-size: 62.5%;
 }
 
 #container-view a {
   text-decoration: none;
-  color: black;
-  /* border-bottom: 0.3px solid black; */
-}
-
-#container-view a:hover {
-  background-color: #e3ebec77;
+  color: #A37ACC;
+  border-bottom: 0.5px solid #A37ACC;
 }
 
 #container-view a:visited {
-  color: #697e8fcc;
+  color: #A37ACC;
+}
+
+/* mobile */
+@media all and (max-width: 768px){
+  
+  html {
+    width: 98%;
+  }
+
+  body {
+    background-color: white;
+    padding: 0 1% 1% 1%;
+  }
+
+  h1, h2, h3, h4, h5, h6, img {
+    margin-bottom: 2rem;
+    line-height: 1.15em;
+  }
+
+
+  section {
+    padding-top: 3rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    font-size: 0.86rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+/* monitor */
+@media all and (min-width: 769px){
+
+  html {
+    width: 85%;
+  }
+
+  body {
+    background-color: white;
+    padding: 0 3% 3% 3%;
+  }
+
+  h1, h2, h3, h4, h5, h6, img {
+    margin-bottom: 2em;
+    line-height: 1.25em;
+  }
+
+  section {
+    padding-top: 4em;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1.3rem;
+  }
+
+  h6 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 1.25em;
+    margin-bottom: 1.25rem;
+  }
+
+  #container-view a:hover {
+    background-color: #e3ebec77;
+  }
+
 }

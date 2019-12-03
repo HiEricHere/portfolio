@@ -2,6 +2,14 @@
   text-align: left;
 }
 
+#container-home h3 {
+  margin-bottom: 1em
+}
+
+#container-bio {
+  padding: 2%;
+}
+
 .emphasis {
   font-style: italic;
 }

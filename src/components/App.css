@@ -22,7 +22,7 @@ html {
 @media all and (max-width: 768px){
   
   html {
-    width: 98%;
+    max-width: 98%;
   }
 
   body {
@@ -35,9 +35,8 @@ html {
     line-height: 1.15em;
   }
 
-
   section {
-    padding-top: 3rem;
+    padding-top: 5rem;
   }
 
   h1 {

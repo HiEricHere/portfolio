@@ -12,31 +12,34 @@ nav a {
 }
 
 /* mobile */
-@media all and (max-width: 768px){
+@media all and (max-width: 379px){
 
   nav {
-    border-bottom: solid black 1px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(100vw * 98%, 65%) minmax(0, 1fr);
+    grid-template-areas: ". links .";
+    font-size: 1.15rem;
   }
 
   nav > ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2.5rem;
+    grid-area: links;
+    border-bottom: solid 1px black;
   }
 
   nav > ul > li {
-    line-height: 2rem;
-    align-self: center;
+    margin: 0.5% 0.5%;
+    line-height: 2.75rem;
+    display: inline-block;
   }
 
 }
 
 /* monitor */
-@media all and (min-width: 769px){
+@media all and (min-width: 380px){
 
   nav {
     display: grid;
-    grid-template-columns: 1fr 65% 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(380px, 65%) minmax(0, 1fr);
     grid-template-areas: ". links .";
     font-size: 1.35rem;
   }

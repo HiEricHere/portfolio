@@ -17,7 +17,7 @@ const Home = () => {
         <span className="orange">fun</span>!
       </h2>
       <div className="background-offwhite" id="container-bio">
-        <h3 className="green">
+        <h3 className="">
           In mid 2019 I made the oddly comfortable decision to change careers.
         </h3>
         <h3>

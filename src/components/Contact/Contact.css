@@ -3,6 +3,10 @@
   max-width: 100%;
 }
 
+#contacts-list > li a {
+  border-bottom: none;
+}
+
 /* mobile */
 @media all and (max-width: 768px){
 

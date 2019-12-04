@@ -1,6 +1,7 @@
 import React from "react";
 
 import Skill from "../Skill/Skill";
+// import Test from "../Skill/Test";
 import "./Skills.css";
 
 const Skills = () => {

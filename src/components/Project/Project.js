@@ -28,9 +28,11 @@ const Project = props => {
       {sampleImage.length ? (
         <img className="sample-image" src={sampleImage} alt={title} />
       ) : null}
-      <div className="tools-style align-left">
-        <p>Tools Used</p>
-        <p style={{ margin: 0 }}>{tools}</p>
+      <div className="tools-style align-left background-offwhite">
+        <p className="dark-orange">Tools Used</p>
+        <p className="green" style={{ margin: 0 }}>
+          {tools}
+        </p>
       </div>
     </li>
   );

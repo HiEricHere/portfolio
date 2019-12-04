@@ -1,7 +1,23 @@
 #container-home {
   text-align: left;
+  height: 100vh;
+}
+
+#container-home h3 {
+  margin-bottom: 1em
+}
+
+#container-bio {
+  padding: 2%;
 }
 
 .emphasis {
   font-style: italic;
+}
+
+@media all and (max-width: 768px){
+  #container-home{
+    width: 90%;
+    margin: auto;
+  }
 }

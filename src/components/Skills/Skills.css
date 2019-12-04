@@ -1,35 +1,65 @@
 #container-skills {
-  width: 33%;
+  height: 100vh;
+  min-width: 300px;
+  max-width: 35%;
   margin: auto;
+  font-size: 1.25rem;
 }
 
-#skill-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  place-items: center;
-  gap: 20px;
+
+
+/* mobile */
+@media all and (max-width: 768px){
+
+  #skill-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    place-items: center;
+    gap: 2%;
+    margin-bottom: 1rem;
+  }
+
+  .skill-img {
+    margin-bottom: 1rem;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
 }
 
-.container-skill {
-  place-self: center;
-}
+/* monitor */
+@media all and (min-width: 769px){
 
-.container-skill:hover {
-  transform: scale(0.9);
-}
+  #skill-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    place-items: center;
+    gap: 20px;
+  }
 
-.skill-img {
-  margin-bottom: 10px;
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-}
+  .container-skill {
+    place-self: center;
+  }
 
-.container-skill > figcaption {
-  transition: opacity 300ms ease-in-out;
-}
+  .container-skill:hover {
+    transform: scale(0.9);
+  }
 
-.hide-caption {
-  opacity: 0;
+  .skill-img {
+    margin-bottom: 1rem;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .container-skill > figcaption {
+    transition: opacity 300ms ease-in-out;
+  }
+
+  .hide-caption {
+    opacity: 0;
+  }
+
 }

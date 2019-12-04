@@ -2,6 +2,7 @@ import React from "react";
 import Project from "../Project/Project";
 
 import "./Portfolio.css";
+import "../Colors.css";
 
 const Portfolio = () => {
   const projects = [
@@ -55,6 +56,7 @@ const Portfolio = () => {
 
   return (
     <section id="container-portfolio">
+      <h1>Projects</h1>
       <ul>
         {projects.map(project => {
           return <Project key={project.id} details={project} />;

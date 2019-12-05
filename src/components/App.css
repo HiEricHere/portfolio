@@ -8,6 +8,10 @@ html {
   font-size: 62.5%;
 }
 
+::selection {
+  background-color: #e3ebec77;
+}
+
 #container-view a {
   text-decoration: none;
   color: #A37ACC;
